@@ -4,9 +4,9 @@
 When the user specify the appropriate trigger words , The Kabir gets activated and executes the user commands.
 
 The implemented Voice assistant can perform the following tasks:
-•	Opens a wepage : Youtube , G-Mail , Google Chrome , StackOverflow
+•	Opens a wepage : Youtube , G-Mail , Google Chrome , StackOverflow, social medias.
 
-             User : Hey Kabir, Open Youtube.
+             User : Hey Kabir, Open Youtube / Google chrome / Facebook.
 
 •	Predicts time
 
