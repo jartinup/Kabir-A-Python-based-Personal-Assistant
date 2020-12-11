@@ -89,3 +89,7 @@ Kabir uses Third party API's to predict weather in different cities and to ask c
     Open Weather Map - To forecast weather
 
     WolframAlpha - To answer questions and Calculations
+    
+    
+    
+    
