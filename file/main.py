@@ -117,7 +117,7 @@ if __name__=='__main__':
 
         elif 'database' in statement:
             speak('What you want to search in database?')
-            translate(takeCommand())
+            find(takeCommand())
 
         elif 'who is' in statement:
              person = statement.replace('who is', '')
