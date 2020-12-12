@@ -5,12 +5,14 @@ import pywhatkit
 import wikipedia
 import webbrowser
 import pyjokes
+import pyautogui
 import os
 import time
 import subprocess
 import wolframalpha
 import json
 import requests
+from database import find
 
 
 print('Loading your AI personal assistant - Kabir')
@@ -35,6 +37,10 @@ def wishMe():
     else:
         speak("Hello,Good Evening")
         print("Hello,Good Evening")
+
+def screenshot(index : int = 0):  
+    img = pyautogui.screenshot()
+    img.save("screenshots\\img.png")      
 
 def takeCommand():
     r=sr.Recognizer()
@@ -104,7 +110,15 @@ if __name__=='__main__':
             speak("Here is the result!")
             time.sleep(15)  
             
-        
+        elif 'take a screenshot' in statement or 'screenshot' in statement:
+            speak("Taking a screenshot")
+            screenshot()
+            speak("Successfully took a screenshot, You can find it in the screenshots folder")
+
+        elif 'database' in statement:
+            speak('What you want to search in database?')
+            translate(takeCommand())
+
         elif 'who is' in statement:
              person = statement.replace('who is', '')
              info = wikipedia.summary(person, 3)
@@ -114,7 +128,12 @@ if __name__=='__main__':
 
         elif 'tell me a story' in statement:
             speak("Preeti will now tell you a story")
-            exec(open("file\storydbase.py").read())
+            exec(open("file\\storydbase.py").read())
+
+        elif 'tell me a hindi story' in statement or 'tell me a story in hindi' or 'hindi story' in statement:
+            speak("Okay, Playing a Hindi story")
+            exec(open("file\\hindistories.py").read())
+            
  
         elif 'joke' in statement:
             speak('Here is a joke')
