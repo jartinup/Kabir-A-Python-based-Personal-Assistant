@@ -111,6 +111,10 @@ if __name__=='__main__':
              speak("According to Wikipedia Summary")
              print(info)
              speak(info)
+
+        elif 'tell me a story' in statement:
+            speak("Preeti will now tell you a story")
+            exec(open("file\storydbase.py").read())
  
         elif 'joke' in statement:
             speak('Here is a joke')
@@ -184,6 +188,10 @@ if __name__=='__main__':
         elif "open instagram" in statement:
             webbrowser.open_new_tab("https://instagram.com")
             speak("Here is Instagram")
+
+        elif "open github" in statement:
+            webbrowser.open_new_tab("https://github.com")
+            speak("Here is GitHub")
 
         elif "open twitter" in statement:
             webbrowser.open_new_tab("https://twitter.com")
