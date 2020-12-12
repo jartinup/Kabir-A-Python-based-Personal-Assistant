@@ -181,6 +181,10 @@ if __name__=='__main__':
             webbrowser.open_new_tab("https://facebook.com")
             speak("Here is facebook")
         
+        elif "open instagram" in statement:
+            webbrowser.open_new_tab("https://instagram.com")
+            speak("Here is Instagram")
+
         elif "open twitter" in statement:
             webbrowser.open_new_tab("https://twitter.com")
             speak("Here is Twitter")
