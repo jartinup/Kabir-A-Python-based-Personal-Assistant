@@ -130,7 +130,7 @@ if __name__=='__main__':
             speak("Preeti will now tell you a story")
             exec(open("file\\storydbase.py").read())
 
-        elif 'tell me a hindi story' in statement or 'tell me a story in hindi' or 'hindi story' in statement:
+        elif 'tell me a hindi story' in statement or 'tell me a story in hindi' in statement:
             speak("Okay, Playing a Hindi story")
             exec(open("file\\hindistories.py").read())
             
@@ -220,6 +220,18 @@ if __name__=='__main__':
             news = webbrowser.open_new_tab("https://timesofindia.indiatimes.com/home/headlines")
             speak('Here are some headlines from the Times of India,Happy reading')
             time.sleep(6)
+
+        elif 'Take Note for Me' in statement or 'make a reminder' in statement:
+            speak("Please Proceed")
+            rememberMessage = takeCommand()
+            speak("you said me to remember"+rememberMessage)
+            remember = open('imp\\notes.txt', 'w')
+            remember.write(rememberMessage)
+            remember.close()
+
+        elif 'speak my notes' in statement or 'remind me' in statement:
+            remember = open('imp\\notes.txt', 'r')
+            speak("you said me to remember that" + remember.read())
 
         elif 'date' in statement:
              speak('sorry, I have a girlfriend')
