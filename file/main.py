@@ -13,6 +13,7 @@ import wolframalpha
 import json
 import requests
 from database import find
+from pygame import mixer
 
 
 print('Loading your AI personal assistant - Kabir')
@@ -57,6 +58,7 @@ def takeCommand():
             return "None"
         return statement
 
+
 speak("Loading your AI personal assistant Kabir")
 wishMe()
 
@@ -66,6 +68,11 @@ if __name__=='__main__':
 
     while True:
         speak("Tell me how can I help you?")
+        mixer.init()
+        mixer.music.load('imp\\init.mp3')
+        mixer.music.play()
+        
+
         statement = takeCommand().lower()
         if statement==0:
             continue

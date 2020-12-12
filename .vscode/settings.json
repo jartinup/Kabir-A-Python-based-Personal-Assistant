@@ -1,3 +1,6 @@
 {
-    "json.maxItemsComputed": 10000000
+    "json.maxItemsComputed": 10000000,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "C:\\Users\\punit\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
 }
