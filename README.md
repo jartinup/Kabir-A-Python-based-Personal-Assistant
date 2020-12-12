@@ -1,12 +1,12 @@
 # Kabir - Personal Assistant
-Kabir is a personal assistant programmed to perform minor tasks like some calculations, opening Youtube, google chrome, gmail and stackoverflow, social medias, predict time, search on wikipedia, predict weather in different cities , get top headline news from times of India, tell jokes and ask some questions too!
+Kabir is a personal assistant programmed to perform minor tasks like some calculations, tell stories, opening Youtube, google chrome, gmail and stackoverflow, social medias, predict time, search on wikipedia, predict weather in different cities , get top headline news from times of India, tell jokes and ask some questions too!
 
 When the user specify the appropriate trigger words , The Kabir gets activated and executes the user commands.
 
 The implemented Voice assistant can perform the following tasks:
 •	Opens a wepage : Youtube , G-Mail , Google Chrome , StackOverflow, social medias.
 
-             User : Hey Kabir, Open Youtube / Google chrome / Facebook.
+             User : Hey Kabir, Open Youtube / Google chrome / Facebook / GitHub.
 
 •	Predicts time
 
@@ -14,8 +14,11 @@ The implemented Voice assistant can perform the following tasks:
 
 •	Play video songs on YouTube
 
-              
               User: Hey Kabir, Play Justin Bieber.
+	      
+•	Tells you a story. 
+  
+              User: Hey Kabir, Tell me a story.	      
               
 •	Tell you Jokes
 
