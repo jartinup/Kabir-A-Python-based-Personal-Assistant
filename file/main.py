@@ -240,7 +240,7 @@ if __name__=='__main__':
             speak('Here are some headlines from the Times of India,Happy reading')
             time.sleep(6)
 
-        elif 'Take Note for Me' in statement or 'make a reminder' in statement:
+        elif 'Take a Note for Me' in statement or 'make a reminder' in statement:
             speak("Please Proceed")
             rememberMessage = takeCommand()
             speak("you said me to remember"+rememberMessage)
