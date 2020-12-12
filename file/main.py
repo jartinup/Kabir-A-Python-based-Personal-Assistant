@@ -103,6 +103,18 @@ if __name__=='__main__':
             speak('results are displayed on your computer screen')
             time.sleep(5)  
 
+        elif 'can i tell you my name' in statement or 'i want to tell you my name' in statement :
+            speak("Please Tell me your name")
+            rememberMessage = takeCommand()
+            speak("you told me that your name is"+rememberMessage)
+            remember = open('imp\\username.txt', 'w')
+            remember.write(rememberMessage)
+            remember.close()
+
+        elif 'what is my name' in statement or 'who am I' in statement:
+            remember = open('imp\\username.txt', 'r')
+            speak("Your name is" + remember.read())    
+
         elif 'what is' in statement:
             answer = statement
             speak('searching about' + answer)
@@ -232,6 +244,8 @@ if __name__=='__main__':
         elif 'speak my notes' in statement or 'remind me' in statement:
             remember = open('imp\\notes.txt', 'r')
             speak("you said me to remember that" + remember.read())
+        
+       
 
         elif 'date' in statement:
              speak('sorry, I have a girlfriend')
