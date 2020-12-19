@@ -164,7 +164,7 @@ if __name__=='__main__':
             time.sleep(5)
 
         elif 'open gmail' in statement:
-            webbrowser.open_new_tab("gmail.com")
+            webbrowser.open_new_tab("https://www.gmail.com")
             speak("Google Mail open now")
             time.sleep(5)
 
@@ -240,7 +240,7 @@ if __name__=='__main__':
             speak('Here are some headlines from the Times of India,Happy reading')
             time.sleep(6)
 
-        elif 'Take a Note for Me' in statement or 'make a reminder' in statement:
+        elif 'take a note for me' in statement or 'make a reminder' in statement:
             speak("Please Proceed")
             rememberMessage = takeCommand()
             speak("you said me to remember"+rememberMessage)
