@@ -25,8 +25,8 @@ def takeCommand():
         audio = r.listen(source)
 
     try:
-        print('Recognizing..')
-        speak('Recognizing')
+        print('Searching in Database')
+        speak('Searching in Database')
         query = r.recognize_google(audio, language='en-in')
         print(f'User said: {query}\n')
 
@@ -48,7 +48,7 @@ def find(word):
         if 'yes' in ans:
             speak(data[x])
         elif 'no' in ans:
-            speak("Word doesn't exist. Please make sure you spelled it correctly.")
+            speak("Word doesn't exists. Please make sure you spelled it correctly.")
         else:
             speak("We didn't understand your entry.")
 
