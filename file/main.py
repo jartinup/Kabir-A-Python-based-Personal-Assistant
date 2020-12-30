@@ -263,7 +263,7 @@ if __name__=='__main__':
              print('I am in a relationship with Preeti')
 
         elif 'ask' in statement or 'question' in statement:
-            speak('Sure, I can answer to some questions and I am still learning, so pardon me if I do not have answer to your questions.')
+            speak('Sure, Please ask!')
             question=takeCommand()
             app_id="5WQAW9-RPQP5WW66Q"
             client = wolframalpha.Client('5WQAW9-RPQP5WW66Q')
